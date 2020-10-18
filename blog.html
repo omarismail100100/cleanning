@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cleaning Company - Free Bootstrap 4 Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" type="image/png" href="images/ontitleicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+<!-- الربط الخاص بالجاليري -->
+  <link rel="stylesheet" href="PhotoSwipe-master/dist/photoswipe.css">
+  <link rel="stylesheet" href="PhotoSwipe-master/dist/default-skin/default-skin.css">
+  <!-- new -->
+  <style>
+
+    .prod-gallery{
+      margin: 100px 0px;
+    }
+
+    .my-gallery {
+      width: 100%;
+      float: left;
+    }
+
+    .my-gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .my-gallery figure {
+      display: block;
+      float: left;
+      margin: 0 5px 5px 0;
+      width: 150px;
+    }
+
+    .my-gallery figcaption {
+      display: none;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .main-title-logo {
+      width: 25%;
+    }
+
+    .header,
+    .footer {
+      background: #33313b;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header a,
+    .footer a {
+      color: #f3e53d;
+    }
+
+    @media (min-width: 768px) {
+
+      .header,
+      .footer {
+        padding: 100px 30px;
+      }
+    }
+
+    .header h1,
+    .footer h1 {
+      font-size: 4em;
+      font-weight: 300;
+    }
+
+    .header i.fa,
+    .footer i.fa {
+      font-size: 4em;
+    }
+
+    .header .bounce,
+    .footer .bounce {
+      -webkit-animation-name: bounce;
+      animation-name: bounce;
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+    }
+
+    .header .animated,
+    .footer .animated {
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .section {
+      width: 100%;
+      position: relative;
+      height: 300px !important;
+    }
+
+    .section .left,
+    .section .middle,
+    .section .right {
+      width: 100%;
+      display: block;
+      color: #2b98f0;
+      box-sizing: border-box;
+      left: 0;
+      padding: 30px;
+      text-align: center;
+      overflow: hidden;
+      -moz-transition: 0.3s ease-in-out all;
+      -o-transition: 0.3s ease-in-out all;
+      -webkit-transition: 0.3s ease-in-out all;
+      transition: 0.3s ease-in-out all;
+    }
+
+    @media (min-width: 480px) {
+
+      .section .left .content,
+      .section .middle .content,
+      .section .right .content {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+
+    @media (min-width: 480px) {
+
+      .section .left,
+      .section .middle,
+      .section .right {
+        width: 50%;
+        font-size: 0.9em;
+        padding: 10px;
+        left: 0;
+        float: left;
+        position: absolute;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .section .left,
+      .section .middle,
+      .section .right {
+        width: 33.33333%;
+        left: 33.33%;
+        padding: 10px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .section .left,
+      .section .middle,
+      .section .right {
+        padding: 30px;
+        font-size: 1em;
+      }
+    }
+
+    .section.animate .left {
+      left: 0;
+    }
+
+    @media (min-width: 480px) {
+      .section.animate .left {
+        left: 50%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .section.animate .left {
+        left: 0;
+      }
+    }
+
+    .section.animate .right {
+      left: 0;
+    }
+
+    @media (min-width: 480px) {
+      .section.animate .right {
+        left: 50%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .section.animate .right {
+        left: 66.66%;
+      }
+    }
+
+    .section .title {
+      background: #f3e53d;
+      height: 300px !important;
+    }
+
+    .section .title h2 {
+      margin-top: 0;
+    }
+
+    .section .title p {
+      line-height: 1.55em;
+      margin-bottom: 0.75em;
+    }
+
+    /* .section .title .btn-primary {
+	  color: #fff;
+	  background: #ff3814;
+	  padding: 10px;
+	  text-decoration: none;
+	  border-radius: 3px;
+	  display: inline-block;
+	  -moz-transition: 0.3s ease-in-out all;
+	  -o-transition: 0.3s ease-in-out all;
+	  -webkit-transition: 0.3s ease-in-out all;
+	  transition: 0.3s ease-in-out all;
+	}
+	.section .title .btn-primary:hover {
+	  background: #fa2600;
+	} */
+    .section .tiles {
+      padding: 0;
+      background: #fff;
+      clear: both;
+      display: none;
+      float: none;
+      height: 300px !important;
+    }
+
+    .section .tiles img {
+      width: 50%;
+      float: left;
+      height: auto;
+      opacity: 0.7;
+      height: 150px;
+
+      -moz-transition: 0.3s ease-in-out all;
+      -o-transition: 0.3s ease-in-out all;
+      -webkit-transition: 0.3s ease-in-out all;
+      transition: 0.3s ease-in-out all;
+      /* -webkit-filter: grayscale(100%);
+	  -moz-filter: grayscale(100%);
+	  -o-filter: grayscale(100%); */
+    }
+
+    .section .tiles img:hover {
+      opacity: 1;
+      /* -webkit-filter: grayscale(0%);
+	  -moz-filter: grayscale(0%);
+	  -o-filter: grayscale(0%); */
+    }
+
+    @media (min-width: 768px) {
+      .section .tiles {
+        display: block;
+        height: 300px !important;
+      }
+    }
+
+    .section .middle {
+      background: slategray;
+      z-index: 2;
+      padding: 0;
+    }
+
+    .section .middle img {
+      width: 100%;
+      height: auto;
+      display: block;
+      height: 300px !important;
+    }
+
+    @-webkit-keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        -webkit-transform: translateY(0);
+      }
+
+      40% {
+        -webkit-transform: translateY(-20px);
+      }
+
+      60% {
+        -webkit-transform: translateY(-10px);
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-20px);
+      }
+
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .header h1,
+    .footer h1 {
+      color: #f3e53d;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+    @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 3.6rem;
+    }
+
+    p {
+      margin-bottom: 0.5em;
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 25px;
+      border-radius: 4px;
+    }
+
+    .button-primary {
+      position: relative;
+      background-color: #2b98f0;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      transition: color 0.3s ease-in;
+      z-index: 1;
+    }
+
+    .button-primary:hover {
+      color: #2b98f0;
+      text-decoration: none;
+    }
+
+    .button-primary::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: #fff;
+      border-radius: 4px;
+      opacity: 0;
+      -webkit-transform: scaleX(0.8);
+      -ms-transform: scaleX(0.8);
+      transform: scaleX(0.8);
+      transition: all 0.3s ease-in;
+      z-index: -1;
+    }
+
+    .button-primary:hover::after {
+      opacity: 1;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    .navbar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0;
+      width: 100%;
+      transition: background 0.6s ease-in;
+      z-index: 99999;
+    }
+
+    .navbar .navbar-brand {
+      font-family: 'Lobster', cursive;
+      font-size: 2.5rem;
+      max-width: 250px;
+    }
+
+    .navbar .navbar-toggler {
+      position: relative;
+      height: 50px;
+      width: 50px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .navbar .navbar-toggler .menu-icon-bar {
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+      background-color: #fff;
+      opacity: 0;
+      -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      transform: translateY(-1px);
+      transition: all 0.3s ease-in;
+    }
+
+    .navbar .navbar-toggler .menu-icon-bar:first-child {
+      opacity: 1;
+      -webkit-transform: translateY(-1px) rotate(45deg);
+      -ms-sform: translateY(-1px) rotate(45deg);
+      transform: translateY(-1px) rotate(45deg);
+    }
+
+    .navbar .navbar-toggler .menu-icon-bar:last-child {
+      opacity: 1;
+      -webkit-transform: translateY(-1px) rotate(135deg);
+      -ms-sform: translateY(-1px) rotate(135deg);
+      transform: translateY(-1px) rotate(135deg);
+    }
+
+    .navbar .navbar-toggler.collapsed .menu-icon-bar {
+      opacity: 1;
+    }
+
+    .navbar .navbar-toggler.collapsed .menu-icon-bar:first-child {
+      -webkit-transform: translateY(-7px) rotate(0);
+      -ms-sform: translateY(-7px) rotate(0);
+      transform: translateY(-7px) rotate(0);
+    }
+
+    .navbar .navbar-toggler.collapsed .menu-icon-bar:last-child {
+      -webkit-transform: translateY(5px) rotate(0);
+      -ms-sform: translateY(5px) rotate(0);
+      transform: translateY(5px) rotate(0);
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      position: relative;
+      color: #fff;
+      font-size: 1.6rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #f3e53d;
+    }
+
+    .navbar .dropdown-menu {
+      padding: 0;
+      background-color: rgba(0, 0, 0, .9);
+    }
+
+    .navbar .dropdown-menu .dropdown-item {
+      position: relative;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 1.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+      transition: color 0.2s ease-in;
+    }
+
+    .navbar .dropdown-menu .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .navbar .dropdown-menu .dropdown-item:hover {
+      background: transparent;
+      color: #2b98f0;
+    }
+
+    .navbar .dropdown-menu .dropdown-item::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      width: 5px;
+      background-color: #2b98f0;
+      opacity: 0;
+      transition: opacity 0.2s ease-in;
+    }
+
+    .navbar .dropdown-menu .dropdown-item:hover::before {
+      opacity: 1;
+    }
+
+    .navbar.fixed-top {
+      position: fixed;
+      -webkit-animation: navbar-animation 0.6s;
+      animation: navbar-animation 0.6s;
+      background-color: #33313b;
+    }
+
+    .navbar.fixed-top.navbar-dark .navbar-nav .nav-link.active {
+      color: #2b98f0;
+    }
+
+    .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
+      background-color: #2b98f0;
+    }
+
+    .content {
+      padding: 120px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-brand {
+        margin-left: 20px;
+      }
+
+      .navbar-nav {
+        padding: 0 20px;
+        background-color: rgba(0, 0, 0, .9);
+      }
+
+      .navbar.fixed-top .navbar-nav {
+        background: transparent;
+      }
+    }
+
+    @media screen and (min-width: 767px) {
+      .banner {
+        padding: 0 150px;
+      }
+
+      .banner h1 {
+        font-size: 5rem;
+      }
+
+      .banner p {
+        font-size: 2rem;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        padding: 23px 15px;
+      }
+
+      .navbar-dark .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 15px;
+        left: 30%;
+        right: 30%;
+        height: 1px;
+        background-color: #2b98f0;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        transition: transform 0.1s ease-in;
+      }
+
+      .navbar-dark .navbar-nav .nav-link:hover::after {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+      .dropdown-menu {
+        min-width: 200px;
+        -webkit-animation: dropdown-animation 0.3s;
+        animation: dropdown-animation 0.3s;
+        -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+        transform-origin: top;
+      }
+    }
+
+    @-webkit-keyframes navbar-animation {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes navbar-animation {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @-webkit-keyframes dropdown-animation {
+      0% {
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+      }
+
+      75% {
+        -webkit-transform: scaleY(1.1);
+        -ms-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+      }
+
+      100% {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+      }
+    }
+
+    @keyframes dropdown-animation {
+      0% {
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+      }
+
+      75% {
+        -webkit-transform: scaleY(1.1);
+        -ms-transform: scaleY(1.1);
+        transform: scaleY(1.1);
+      }
+
+      100% {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+      }
+    }
+
+    #pro-pro.container-fluid {
+
+      max-width: 100%;
+    }
+
+    .main-product .container .row .card {
+      border: none;
+      margin-top: 100px;
+    }
+
+    .main-product .container .row .card-body h5 {
+      font-size: 30px;
+    }
+
+    .main-product .container .row .card-body ul li {
+      font-size: 20px;
+    }
+
+    .main-product .container .row .card-body ul {
+      margin-top: 20px;
+    }
+
+    .main-product .container .row .card .card-img {
+
+
+      border-radius: 15px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header class="header-area overlay">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <img src="images/bigtitle.png" alt="" srcset="" class="navbar-brand">
+
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+        </button>
+
+        <div id="main-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li><a href="index.html" class="nav-item nav-link active">Home</a></li>
+            <li><a href="about.html#" class="nav-item nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-item nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-item nav-link">Product</a></li>
+            <li><a href="pricing.html" class="nav-item nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="nav-item nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- الجزء الخاص بالصوره الاساسية كخلفيه لبداية الموقع -->
+
+
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/washing-dishes-111416.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end">
+        <div class="col-md-9 ftco-animate pb-5">
+          <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i
+                  class="fa fa-chevron-right"></i></a></span> <span>Product <i class="fa fa-chevron-right"></i></span>
+          </p>
+          <h1 class="mb-0 bread">Urchin Sponge</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- الجزء الخاص بالمعلومات الكامله عن المنتج -->
+
+  <section class="main-product">
+    <div class="container">
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-7">
+              <img src="images/Urchin Sponge/main.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-5">
+              <div class="card-body ">
+                <h5 class="card-title">Urchin Sponge </h5>
+                <p class="card-text">
+                  <ul>
+                    <li>provides magical cleaning in kitchen and dishwasher. </li>
+                    <li>Excellent cleaning and long lasting.
+                    </li>
+
+                    <li>cleans most sensitive surface without scratching.
+                    </li>
+                    <li>high water absorption power provides easy cleaning.
+                    </li>
+                    <li>Excellent cleaning, dry without leaving a trace.
+
+                    </li>
+                  </ul>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- الجزء الخاص بالجاليري -->
+  <section class="prod-gallery text-center id="btn">
+
+    <h2>All Related Photos</h2>
+
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="my-gallery col-12" itemscope itemtype="http://schema.org/ImageGallery">
+
+          <div class="row">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/a.jpg" itemprop="contentUrl" data-size="1024x1024">
+                <img src="images/Urchin Sponge/a.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 1</figcaption>
+
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/b.jpg" itemprop="contentUrl" data-size="964x1024">
+                <img src="images/Urchin Sponge/b.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 2</figcaption>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/c.jpg" itemprop="contentUrl" data-size="1024x683">
+                <img src="images/Urchin Sponge/c.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 3</figcaption>
+            </figure>
+
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/d.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/d.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+          </div>
+
+
+          <div class="row">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/e.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/e.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/f.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/f.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+
+
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/g.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/g.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/h.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/h.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+          </div>
+
+
+          <div class="row">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/i.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/i.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+
+
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/j.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/j.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col">
+              <a href="images/Urchin Sponge/k.jpg" itemprop="contentUrl" data-size="1024x768">
+                <img src="images/Urchin Sponge/k.jpg" itemprop="thumbnail" alt="Image description" />
+              </a>
+              <figcaption itemprop="caption description">Image caption 4</figcaption>
+            </figure>
+          </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+          <!-- Background of PhotoSwipe. 
+               It's a separate element, as animating opacity is faster than rgba(). -->
+          <div class="pswp__bg"></div>
+
+          <!-- Slides wrapper with overflow:hidden. -->
+          <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+              <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+              </div>
+
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+              <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Cleaning Company</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Latest News</h2>
+          <div class="block-21 mb-4 d-flex">
+            <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+              <div class="meta">
+                <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+          <h2 class="footer-heading">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-1 d-block">Home</a></li>
+            <li><a href="#" class="py-1 d-block">About</a></li>
+            <li><a href="#" class="py-1 d-block">Services</a></li>
+            <li><a href="#" class="py-1 d-block">Works</a></li>
+            <li><a href="#" class="py-1 d-block">Blog</a></li>
+            <li><a href="#" class="py-1 d-block">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San
+                  Francisco, California, USA</span></li>
+              <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+              <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                    class="text">info@yourdomain.com</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+
+          <p class="copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib.com</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+
+  <!-- الجافا الخاص بالجاليري -->
+
+  <script>
+
+
+    var initPhotoSwipeFromDOM = function (gallerySelector) {
+
+      // parse slide data (url, title, size ...) from DOM elements 
+      // (children of gallerySelector)
+      var parseThumbnailElements = function (el) {
+        var thumbElements = el.childNodes,
+          numNodes = thumbElements.length,
+          items = [],
+          figureEl,
+          linkEl,
+          size,
+          item;
+
+        for (var i = 0; i < numNodes; i++) {
+
+          figureEl = thumbElements[i]; // <figure> element
+
+          // include only element nodes 
+          if (figureEl.nodeType !== 1) {
+            continue;
+          }
+
+          linkEl = figureEl.children[0]; // <a> element
+
+          size = linkEl.getAttribute('data-size').split('x');
+
+          // create slide object
+          item = {
+            src: linkEl.getAttribute('href'),
+            w: parseInt(size[0], 10),
+            h: parseInt(size[1], 10)
+          };
+
+
+
+          if (figureEl.children.length > 1) {
+            // <figcaption> content
+            item.title = figureEl.children[1].innerHTML;
+          }
+
+          if (linkEl.children.length > 0) {
+            // <img> thumbnail element, retrieving thumbnail url
+            item.msrc = linkEl.children[0].getAttribute('src');
+          }
+
+          item.el = figureEl; // save link to element for getThumbBoundsFn
+          items.push(item);
+        }
+
+        return items;
+      };
+
+      // find nearest parent element
+      var closest = function closest(el, fn) {
+        return el && (fn(el) ? el : closest(el.parentNode, fn));
+      };
+
+      // triggers when user clicks on thumbnail
+      var onThumbnailsClick = function (e) {
+        e = e || window.event;
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+        var eTarget = e.target || e.srcElement;
+
+        // find root element of slide
+        var clickedListItem = closest(eTarget, function (el) {
+          return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+        });
+
+        if (!clickedListItem) {
+          return;
+        }
+
+        // find index of clicked item by looping through all child nodes
+        // alternatively, you may define index via data- attribute
+        var clickedGallery = clickedListItem.parentNode,
+          childNodes = clickedListItem.parentNode.childNodes,
+          numChildNodes = childNodes.length,
+          nodeIndex = 0,
+          index;
+
+        for (var i = 0; i < numChildNodes; i++) {
+          if (childNodes[i].nodeType !== 1) {
+            continue;
+          }
+
+          if (childNodes[i] === clickedListItem) {
+            index = nodeIndex;
+            break;
+          }
+          nodeIndex++;
+        }
+
+
+
+        if (index >= 0) {
+          // open PhotoSwipe if valid index found
+          openPhotoSwipe(index, clickedGallery);
+        }
+        return false;
+      };
+
+      // parse picture index and gallery index from URL (#&pid=1&gid=2)
+      var photoswipeParseHash = function () {
+        var hash = window.location.hash.substring(1),
+          params = {};
+
+        if (hash.length < 5) {
+          return params;
+        }
+
+        var vars = hash.split('&');
+        for (var i = 0; i < vars.length; i++) {
+          if (!vars[i]) {
+            continue;
+          }
+          var pair = vars[i].split('=');
+          if (pair.length < 2) {
+            continue;
+          }
+          params[pair[0]] = pair[1];
+        }
+
+        if (params.gid) {
+          params.gid = parseInt(params.gid, 10);
+        }
+
+        return params;
+      };
+
+      var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
+        var pswpElement = document.querySelectorAll('.pswp')[0],
+          gallery,
+          options,
+          items;
+
+        items = parseThumbnailElements(galleryElement);
+
+        // define options (if needed)
+        options = {
+
+          // define gallery index (for URL)
+          galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+          getThumbBoundsFn: function (index) {
+            // See Options -> getThumbBoundsFn section of documentation for more info
+            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+              pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+              rect = thumbnail.getBoundingClientRect();
+
+            return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+          }
+
+        };
+
+        // PhotoSwipe opened from URL
+        if (fromURL) {
+          if (options.galleryPIDs) {
+            // parse real index when custom PIDs are used 
+            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+            for (var j = 0; j < items.length; j++) {
+              if (items[j].pid == index) {
+                options.index = j;
+                break;
+              }
+            }
+          } else {
+            // in URL indexes start from 1
+            options.index = parseInt(index, 10) - 1;
+          }
+        } else {
+          options.index = parseInt(index, 10);
+        }
+
+        // exit if index not found
+        if (isNaN(options.index)) {
+          return;
+        }
+
+        if (disableAnimation) {
+          options.showAnimationDuration = 0;
+        }
+
+        // Pass data to PhotoSwipe and initialize it
+        gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+      };
+
+      // loop through all gallery elements and bind events
+      var galleryElements = document.querySelectorAll(gallerySelector);
+
+      for (var i = 0, l = galleryElements.length; i < l; i++) {
+        galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+        galleryElements[i].onclick = onThumbnailsClick;
+      }
+
+      // Parse URL and open gallery if it contains #&pid=3&gid=1
+      var hashData = photoswipeParseHash();
+      if (hashData.pid && hashData.gid) {
+        openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+      }
+    };
+
+    // execute above function
+    initPhotoSwipeFromDOM('.my-gallery');
+  </script>
+
+  <!-- الجافا الخاص بالجاليري -->
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <!-- اللينكين الخاصيين بالجاليري -->
+  <script src="PhotoSwipe-master/dist/photoswipe.min.js"></script>
+  <script src="PhotoSwipe-master/dist/photoswipe-ui-default.min.js"></script>
+  <!-- اللينكين الخاصيين بالجاليري -->
+
+</body>
+
+</html>
